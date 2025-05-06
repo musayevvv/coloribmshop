@@ -64,3 +64,99 @@
     font-size: 15px;
     border: 1px solid transparent;
 }
+
+
+@media only screen and (max-width:1484px) {
+    .bannerRight h1 {
+        font-size: 50px;
+    }
+
+    .bannerRight {
+        padding-top: 100px;
+    }
+}
+
+
+@media only screen and (max-width:1300px) {
+    .bannerRight {
+        padding-top: 200px;
+    }
+}
+
+@media only screen and (max-width:1122px) {
+    .bannerDiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .bannerLeft {
+        padding: 0;
+        width: 20%;
+        height: 20vh;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .bannerRight {
+        height: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1300px) {
+    .bannerRight h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .bannerRight h1 {
+        font-size: 30px;
+    }
+
+
+    .bannerRight h1:first-child {
+        font-size: 26px;
+    }
+}
+
+
+@media only screen and (max-width:1300px) {
+    .bannerRight h1 {
+        font-size: 20px;
+    }
+
+
+    .bannerRight h1:first-child {
+        font-size: 16px;
+    }
+
+    .bannerLeft {
+        width: 50%;
+        height: 40vh;
+    }
+
+    .bannerRight {
+        @media only screen and (max-width:360px) {
+
+            .bannerRight h1 {
+                font-size: 30px;
+            }
+
+
+            .bannerRight h1:first-child {
+                font-size: 26px;
+            }
+        }
+    }
+}

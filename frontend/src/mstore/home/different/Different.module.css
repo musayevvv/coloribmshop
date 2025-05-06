@@ -62,3 +62,27 @@
 .card4 {
     grid-area: 1 / 3 / 3 / 4;
 }
+
+
+@media only screen and (max-width:1134px) {
+    .differentBox {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .differentCard {
+        grid-area: auto !important;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .card3{
+        width: 400PX;
+    }
+}

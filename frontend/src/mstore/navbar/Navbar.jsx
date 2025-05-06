@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaBars } from "react-icons/fa6";
 import styles from './Navbar.module.css'
 const Navbar = () => {
     return (
@@ -26,6 +27,7 @@ const Navbar = () => {
                             <a href="basket">BASKET</a>
                             <a href="dashboard">DASHBOARD</a>
                         </div>
+                        <div className={styles.hamburger}><FaBars /></div>
                     </div>
                 </div>
             </header>
