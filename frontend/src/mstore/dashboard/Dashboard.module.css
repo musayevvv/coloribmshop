@@ -1,0 +1,113 @@
+.dashboardSection {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.dashboardDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+form input[type="text"],
+form input[type="url"],
+form input[type="image"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 0.75rem;
+    background-color: #0070f3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+.menProduct {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.productimage img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.productBody h5 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.productBody h3 {
+    font-size: 1.4rem;
+    color: #0070f3;
+    margin: 0.25rem 0 0 0;
+}
+
+.dltButton {
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dltButton:active{
+    background-color: #005bb5;
+}
+
+@media (min-width: 768px) {
+    .dashboardDiv {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    form {
+        flex: 1 1 100%;
+    }
+
+    .menProduct {
+        flex: 1 1 calc(33.333% - 2rem);
+        margin: 1rem;
+    }
+}
