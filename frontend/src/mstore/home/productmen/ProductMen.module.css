@@ -109,3 +109,39 @@
         line-height: 1.2em !important;
     }
 }
+
+
+@media only screen and (max-width:1100px) {
+    .menBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menProduct {
+        width: 40%;
+        align-items: center;
+    }
+
+    .productBody {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    .menBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menProduct {
+        width: 100%;
+        align-items: center;
+    }
+
+    .productBody {
+        width: 100%;
+    }
+}
